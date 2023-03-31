@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class MemberVO {
     private int id;
-    private String memberNamer;
+    private String memberName;
 }

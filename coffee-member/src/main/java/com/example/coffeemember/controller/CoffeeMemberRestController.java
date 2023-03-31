@@ -20,13 +20,14 @@ public class CoffeeMemberRestController {
         return "coffee-member service";
     }
 
-    @GetMapping("/existMember/{memberMember}")
+    @GetMapping("/existMember/{memberName}")
     public boolean existMember(@PathVariable("memberName") String memberName){
+        System.out.println("데이터 확인 : " + memberName);
         MemberVO vo = new MemberVO();
-        vo.setMemberNamer(memberName);
+        vo.setMemberName(memberName);
 
         if(service.findMember(vo) != null){
-            return false;
+            return true;
         }else{
             return false;
         }
