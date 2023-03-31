@@ -1,13 +1,13 @@
-package com.example.coffeeorder;
+package com.example.apigatewayservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CoffeeOrderApplication {
+public class ApigatewayServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CoffeeOrderApplication.class, args);
+        SpringApplication.run(ApigatewayServiceApplication.class, args);
     }
 
 }
